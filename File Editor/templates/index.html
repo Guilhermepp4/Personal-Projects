@@ -3,54 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>File Editor</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <h1>Welcome To File Editor</h1>
+    
     <form action="/replacementText" method="post" enctype="multipart/form-data">
-        <input type="file" id="fileInput" name="fileInput" required>
-        <input type="text" name="replaceText1" placeholder="Enter Text Here (Construction Local)">
-        <input type="text" name="replaceText2" placeholder="Enter Text Here (Construction Owner)">
-        <input type="text" name="replaceText3" placeholder="Enter Text Here (Date)">
-        <input type="text" name="footerOwner" placeholder="Enter Text Here (Footer Local)">
-        <input type="text" name="footerLocal" placeholder="Enter Text Here (Footer Village)">
-        <button type="submit">Enviar</button>
-    </form><br></br>
-    <form action="/replacementText" method="post" enctype="multipart/form-data">
-      <input type="file" id="fileInput" name="fileInput" required>
-      <input type="text" name="replaceText1" placeholder="Enter Text Here (Construction Local)">
-      <input type="text" name="replaceText2" placeholder="Enter Text Here (Construction Owner)">
-      <input type="text" name="replaceText3" placeholder="Enter Text Here (Date)">
-      <input type="text" name="footerOwner" placeholder="Enter Text Here (Footer Local)">
-      <input type="text" name="footerLocal" placeholder="Enter Text Here (Footer Village)">
-      <button type="submit">Enviar</button>
-  </form><br></br>
-  <form action="/replacementText" method="post" enctype="multipart/form-data">
-    <input type="file" id="fileInput" name="fileInput" required>
-    <input type="text" name="replaceText1" placeholder="Enter Text Here (Construction Local)">
-    <input type="text" name="replaceText2" placeholder="Enter Text Here (Construction Owner)">
-    <input type="text" name="replaceText3" placeholder="Enter Text Here (Date)">
-    <input type="text" name="footerOwner" placeholder="Enter Text Here (Footer Local)">
-    <input type="text" name="footerLocal" placeholder="Enter Text Here (Footer Village)">
-    <button type="submit">Enviar</button>
-</form><br></br>
-<form action="/replacementText" method="post" enctype="multipart/form-data">
-  <input type="file" id="fileInput" name="fileInput" required>
-  <input type="text" name="replaceText1" placeholder="Enter Text Here (Construction Local)">
-  <input type="text" name="replaceText2" placeholder="Enter Text Here (Construction Owner)">
-  <input type="text" name="replaceText3" placeholder="Enter Text Here (Date)">
-  <input type="text" name="footerOwner" placeholder="Enter Text Here (Footer Local)">
-  <input type="text" name="footerLocal" placeholder="Enter Text Here (Footer Village)">
-  <button type="submit">Enviar</button>
-</form><br></br>
-<form action="/replacementText" method="post" enctype="multipart/form-data">
-  <input type="file" id="fileInput" name="fileInput" required>
-  <input type="text" name="replaceText1" placeholder="Enter Text Here (Construction Local)">
-  <input type="text" name="replaceText2" placeholder="Enter Text Here (Construction Owner)">
-  <input type="text" name="replaceText3" placeholder="Enter Text Here (Date)">
-  <input type="text" name="footerOwner" placeholder="Enter Text Here (Footer Local)">
-  <input type="text" name="footerLocal" placeholder="Enter Text Here (Footer Village)">
-  <button type="submit">Envia</button>
-</form>
+        <div id="buttonChoose">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Select a File to Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <br></br>
+
+                          <input type="checkbox" name="selected" value="C:\Users\Guilherme Pinho\Desktop\Universidade\XProjetos\Samuel\File Editor\files\Termo de responsabilidade - ITED_PREENCHIDO.docx">
+                            Documento1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <input type="checkbox" name="selected" value="C:\Users\Guilherme Pinho\Desktop\Universidade\XProjetos\Samuel\File Editor\files\er.docx">
+                            Documento2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <input type="checkbox" name="selected" value="C:\Users\Guilherme Pinho\Desktop\Universidade\XProjetos\Samuel\File Editor\files\er.docx">
+                            Documento3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <input type="checkbox" name="selected" value="C:\Users\Guilherme Pinho\Desktop\Universidade\XProjetos\Samuel\File Editor\files\Termo de responsabilidade - ITED_PREENCHIDO.docx">
+                            Documento4
+
+                        </td>
+                        
+                    </tr>
+
+                </tbody>
+                
+            </table>
+        </div>
+        <br></br>
+        <div class="replacementTexts">
+            Now lets make the changes in your files
+            <br></br>
+        <input type="text" name="replaceText1" placeholder="Local">
+    <br></br>
+        <input type="text" name="replaceText2" placeholder="Owner">
+        <br></br>
+        
+        <input type="text" name="replaceText3" placeholder="Date">
+        <br></br>
+        
+        <input type="text" name="footerOwner" placeholder="Footer Local">
+        <br></br>
+        
+        <input type="text" name="footerLocal" placeholder="Footer Village">
+        
+    </div>
+        <br></br>
+        <div class="container">
+        <button type="submit">Dowload</button>
+        </div>
+    </form>
 </body>
 </html>
